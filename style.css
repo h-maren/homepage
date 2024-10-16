@@ -1,86 +1,7 @@
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-  .playfair-display {
-    font-family: "Playfair", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-
   body {
     font-family: "Roboto", sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
   }
 
   body, .about-me, .pic-with-header, .about-me-header, .about-me-description, picture, .portfolio {
@@ -91,7 +12,7 @@
 
   .pic-with-header {
     position: relative;
-    display: inline-block;
+    display: block;
   }
 
   body:before {
@@ -102,14 +23,14 @@
     bottom: 0;
     left: 0;
     background-color: #397367;
-    transform: rotate(-10deg) translateY(-70%) translateX(-25%);
+    transform: rotate(-10deg) translateY(-80%) translateX(-25%);
     width: 200vw;
     z-index: -1;
   }
 
   .pic-with-header img {
-    max-width:90vw;
-    display: block;
+    max-width:80%;
+    object-fit: fill;
   }
 
   a {
@@ -126,7 +47,7 @@
 
   h1 {
     position: absolute;
-    font-size: 90px;
+    font-size: 70px;
     font-weight: bold;
     margin: 0px;
     padding: 0px;
@@ -153,7 +74,7 @@
  }
 
  .my-work {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   width: 100%;
  }
@@ -167,8 +88,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
-  background-color: #35393C;
+  color:#35393C;
+  background-color: #63CCCA;
   text-align: center;
  }
 
@@ -207,3 +128,43 @@
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
 }
 
+.contact-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-aside h2 {
+  text-align: center;
+}
+
+.contact-aside p {
+  text-align: left;
+}
+
+.contact-info {
+  background-color: #397367;
+  color: white;
+}
+
+.social-media-line {
+  align-self: center;
+}
+
+.contact-info img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.telephone-line, .email-line {
+  margin: 2px 20px;
+}
+
+@media (max-width: 480px) {
+  .contact-aside .telephone-line img {
+    display: none;
+  }
+  .contact-aside .email-line img {
+    display: none;
+  }
+}
