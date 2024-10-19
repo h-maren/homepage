@@ -157,7 +157,9 @@
 }
 
 .telephone-line, .email-line {
-  margin: 2px 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 @media (max-width: 499px) {
@@ -167,33 +169,59 @@
   .contact-aside .email-line img {
     display: none;
   }
+  .telephone-line, .email-line {
+    margin: 2px 15px;
+  }
 }
 
-@media (min-width: 500px) and (max-width:999px) {
-
+@media (min-width: 500px) and (max-width: 999px) {
   .about-me-header {
     display: block;
   }
-
-  .social-media-line {
+ .about-me-header .social-media-line {
     display: none;
   }
-
   .about-me-description {
     background-color: white;
     border: 1px solid grey;
     box-shadow: 1px 2px 2px hsl(0deg 0% 0%/0.47);
     transform: translateX(-20%);
   }
-
   picture {
     position: relative;
-    float: left;
-    z-index: 1;
+    float: left;  
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 500px){
+  .contact-info img {
+    max-width: 40vw;
+    float: right;
+    margin: 20px;
   }
 
-  img {
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-aside .social-media-line {
+    align-self: baseline;
+  }
+
+  .contact-aside h2 {
     margin-left: 20px;
-    display: inline-block;
+    align-self: baseline;
+  }
+}
+
+@media (min-width: 1000px){
+  .contact-info img {
+    max-height: 400px;
+  }
+  .contact-info {
+    justify-content: center;
   }
 }
