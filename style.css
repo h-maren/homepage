@@ -54,11 +54,11 @@
     position: absolute;
     transform: translate(0%,300%);
     color: white;
-    background-color:	hsla(206, 6%, 22%, 20%);
+    background-color:	hsla(206, 6%, 22%, 10%);
  }
 
  h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 10px;
  }
 
@@ -172,33 +172,75 @@
   .telephone-line, .email-line {
     margin: 2px 15px;
   }
+  .about-me-header-fullsize {
+    display: none;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 999px) {
-  .about-me-header {
-    display: block;
-  }
- .about-me-header .social-media-line {
+
+ .about-me-header-fullsize .social-media-line {
     display: none;
   }
   .about-me-description {
+    margin: 100px 100px 20px 100px;
+    display: block;
     background-color: white;
     border: 1px solid grey;
     box-shadow: 1px 2px 2px hsl(0deg 0% 0%/0.47);
-    transform: translateX(-20%);
+  }  
+
+  .about-me-description h2 {
+    margin-top: 50px;
+    margin-right: 20px;
   }
-  picture {
+
+  .about-me-description p {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .about-me-header-fullsize img {
     position: relative;
     float: left;  
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
   }
+  h1 {
+    text-align: right;
+    z-index: 3;
+    position: absolute;
+    transform: translate(100%,10%);
+    color: white;
 }
 
 @media (min-width: 500px){
+  .about-me-header {
+    display: none;
+  }
+
+  .about-me-header-fullsize img {
+    max-width: 375px;
+    object-fit: fill;
+    margin-top: 10px;
+  }
+
+  .about-me-header-fullsize h2 {
+    text-align: center;
+  }
+
   .contact-info img {
     max-width: 40vw;
     float: right;
     margin: 20px;
+  }
+
+  .telephone-line img {
+    margin: 5px 20px;
+  }
+
+  .email-line img {
+    margin: 5px 20px;
   }
 
   .contact-info {
@@ -214,6 +256,11 @@
   .contact-aside h2 {
     margin-left: 20px;
     align-self: baseline;
+  }
+
+  .my-work h2 {
+    text-align: left;
+    margin-left: 20px;
   }
 }
 
