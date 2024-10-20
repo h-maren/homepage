@@ -168,9 +168,6 @@
   .telephone-line, .email-line {
     margin: 2px 15px;
   }
-  .about-me-header-fullsize {
-    display: none;
-  }
   .contact-info img {
     max-width: 100%;
     object-fit: contain;
@@ -179,7 +176,11 @@
 
 @media (min-width: 500px) {
 
- .about-me-header-fullsize .social-media-line {
+  .about-me-header {
+    display: block;
+  }
+
+ .about-me-header .social-media-line {
     display: none;
   }
   .about-me-description {
@@ -200,7 +201,7 @@
     margin-bottom: 50px;
   }
 
-  .about-me-header-fullsize img {
+  .about-me-header img {
     position: relative;
     float: left;  
     margin-left: 50px;
@@ -214,17 +215,14 @@
     color: white;
 }
 
-  .about-me-header {
-    display: none;
-  }
 
-  .about-me-header-fullsize img {
+  .about-me-header img {
     max-width: 375px;
     object-fit: fill;
     margin-top: 10px;
   }
 
-  .about-me-header-fullsize h2 {
+  .about-me-header h2 {
     text-align: center;
   }
 
