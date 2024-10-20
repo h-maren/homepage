@@ -12,12 +12,12 @@
 <body>
     <header class="about-me-header">
     <h1>Gus Goodboy</h1>
-            <img src="./images/dog_landscape_small.JPG" alt="Gus the dog in front of trees" />
-            <div class="about-me-description">
+    <img src="./images/dog_hat.jpg" alt="gus dog wearing a hat">
+    <div class="about-me-description">
             <h2>About me</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus obcaecati necessitatibus cupiditate reiciendis tenetur vitae sed. Eos soluta aspernatur facere, eius distinctio, est, laborum eum omnis tempora numquam porro quo!</p>
-            </div>
-    <div class="social-media-line">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus obcaecati necessitatibus cupiditate reiciendis tenetur vitae sed. Eos soluta aspernatur facere, eius distinctio, est, laborum eum omnis tempora numquam porro quo! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit atque architecto perspiciatis dicta nam sequi laboriosam temporibus corporis nisi? Voluptates iusto, dignissimos itaque laudantium quas unde voluptas ipsum illum.</p>
+   
+            <div class="social-media-line">
         <a href="">
             <img src="icons/github_50px.svg" alt="github link">
         </a>
@@ -27,6 +27,7 @@
         <a href="">
             <img src="icons/twitter_50px.svg" alt="twitter link">
         </a>
+    </div>
     </div>
     </header>
     <section class="my-work">
@@ -215,7 +216,11 @@
             </div>
 
         </div>
-        <img src="./images/dog_hat.jpg" alt="gus dog wearing a hat">
+        <picture>
+            <source media="(max-width: 999px)" srcset="./images/dog_landscape_small.JPG" />
+            <source media="(min-width: 100px)" srcset="./images/dog_landscape_large.jpg" />
+            <img src="./images/dog_landscape_large.jpg" alt="Gus the dog in front of trees" />
+        </picture>
     </section>
     
 </body>

@@ -18,7 +18,7 @@
     bottom: 0;
     left: 0;
     background-color: #397367;
-    transform: rotate(-10deg) translateY(-80%) translateX(-25%);
+    transform: rotate(-10deg) translateY(-70%) translateX(-25%);
     width: 200vw;
     z-index: -1;
   }
@@ -52,7 +52,7 @@
     text-align: left;
     z-index: 3;
     position: absolute;
-    transform: translate(0%,300%);
+    transform: translate(0%,500%);
     color: white;
     background-color:	hsla(206, 6%, 22%, 10%);
  }
@@ -114,7 +114,7 @@
 }
 
 .portfolio {
-  margin: 20px;
+  margin: 40px;
   border: 1px solid grey;
   box-shadow: 1px 2px 2px hsl(0deg 0% 0%/0.47);
   border-radius: 5px;
@@ -180,9 +180,7 @@
     display: block;
   }
 
- .about-me-header .social-media-line {
-    display: none;
-  }
+
   .about-me-description {
     margin: 100px 100px 20px 100px;
     display: block;
@@ -211,7 +209,7 @@
     text-align: right;
     z-index: 3;
     position: absolute;
-    transform: translate(100%,10%);
+    transform: translate(50%,10%);
     color: white;
 }
 
@@ -257,15 +255,49 @@
 
   .my-work h2 {
     text-align: left;
-    margin-left: 20px;
+    margin-left: 50px;
+  }
+}
+
+@media(min-width: 500px) and (max-width: 999px) {
+  .about-me-header .social-media-line {
+  display: none;
   }
 }
 
 @media (min-width: 1000px){
+  .about-me-header h1 {
+    transform: translate(20%,500%);
+  }
+  .about-me-header h2 {
+    text-align: left;
+  }
+
+  .about-me-description {
+    margin: 50px;
+  }
+  .about-me-description .social-media-line {
+    justify-content: flex-end;
+  }
+
+  .about-me-description .social-media-line img {
+    margin: 10px;
+  }
+
   .contact-info img {
     max-height: 400px;
   }
   .contact-info {
-    justify-content: center;
+    justify-content: space-around;
   }
+  .portfolio-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+  }
+  .my-work {
+    margin-top: 100px;
+  }
+
+
 }
