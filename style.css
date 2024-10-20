@@ -151,10 +151,6 @@
   align-self: center;
 }
 
-.contact-info img {
-  max-width: 100%;
-  object-fit: contain;
-}
 
 .telephone-line, .email-line {
   display: flex;
@@ -175,9 +171,13 @@
   .about-me-header-fullsize {
     display: none;
   }
+  .contact-info img {
+    max-width: 100%;
+    object-fit: contain;
+  }
 }
 
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) {
 
  .about-me-header-fullsize .social-media-line {
     display: none;
@@ -214,7 +214,6 @@
     color: white;
 }
 
-@media (min-width: 500px){
   .about-me-header {
     display: none;
   }
